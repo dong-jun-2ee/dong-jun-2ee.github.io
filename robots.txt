@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dong-jun-2ee.github.io/sitemap.xml
+Sitemap: /dong-jun-2ee/sitemap.xml
