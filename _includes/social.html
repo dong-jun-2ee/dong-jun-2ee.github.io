@@ -1,4 +1,4 @@
-            <!-- {%- if site.email -%}
+            {%- if site.email -%}
             <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
             {% endif %}
             {%- if site.telegram_username -%}
@@ -6,11 +6,11 @@
             {% endif %}
             {%- if site.whatsapp_number -%}
             <a href="https://wa.me/{{ site.whatsapp_number }}" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            {% endif %} -->
-            {%- if site.orcid_id -%}
-            <a href="https://orcid.org/0009-0004-1397-0855" title="ORCID"><i class="ai ai-orcid"></i></a>
             {% endif %}
-            <!-- {%- if site.scholar_userid -%}
+            {%- if site.orcid_id -%}
+            <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+            {% endif %}
+            {%- if site.scholar_userid -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
             {% endif %}
             {%- if site.semanticscholar_id -%}
@@ -93,11 +93,11 @@
             {% endif %}
             {%- if site.instagram_id -%}
             <a href="https://instagram.com/{{ site.instagram_id }}" title="Instagram"><i class="fab fa-instagram"></i></a>
-            {% endif %} -->
-            {%- if site.facebook_id -%}
-            <a href="https://facebook.com/profile.php?id=100012898219589" title="Facebook"><i class="fab fa-facebook"></i></a>
             {% endif %}
-            <!-- {%- if site.youtube_id -%}
+            {%- if site.facebook_id -%}
+            <a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fab fa-facebook"></i></a>
+            {% endif %}
+            {%- if site.youtube_id -%}
             <a href="https://youtube.com/@{{ site.youtube_id }}" title="YouTube"><i class="fab fa-youtube"></i></a>
             {% endif %}
             {%- if site.discord_id -%}
@@ -113,6 +113,6 @@
             <a id="WeChatBtn" title="WeChat"><i class="fab fa-weixin"></i></a>
             <div id="WeChatMod" class="wechat-modal">
                 <img src="{{ site.wechat_qr | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
-            </div> -->
-            <!-- {% include scripts/wechatModal.html %} -->
+            </div>
+            {% include scripts/wechatModal.html %}
             {% endif %}
