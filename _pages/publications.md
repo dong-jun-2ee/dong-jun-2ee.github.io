@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order.
+description: This page exclusively catalogs papers that have been submitted to or officially published in the proceedings of the International Conference.
 nav: true
 nav_order: 1
 ---
@@ -21,7 +21,7 @@ nav_order: 1
    <div id="submission1" class="col-sm-8">
     <div class="title">Self-Interactive Attention Networks for CTR Prediction</div>
     <div class="author">Dongjun Lee, &nbsp;Hyunsung Lee,&nbsp;and&nbsp;Jaewang Kim</div>
-    <div class="periodical"><em>The 24nd International Symposium on Advanced Intelligent Systems</em>, 2023 (accepted)</div>
+    <div class="periodical"><em>In Proceedings of the 24nd International Symposium on Advanced Intelligent Systems</em>, 2023 (accepted)</div>
     <div class="periodical"> </div>
    </div>
   </div>
