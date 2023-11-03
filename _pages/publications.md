@@ -15,6 +15,9 @@ nav_order: 1
 
  <li>
   <div class="row">
+   <div class="col-sm-2 preview">
+    <figure> <picture><img src="/assets/img/publication_preview/SIAN.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SIAN.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+   </div>
    <div id="submission1" class="col-sm-8">
     <div class="title">Self-Interactive Attention Networks for CTR Prediction</div>
     <div class="author">Dongjun Lee, &nbsp;Hyunsung Lee,&nbsp;and&nbsp;Jaewang Kim</div>
@@ -25,6 +28,9 @@ nav_order: 1
  </li>
  <li>
   <div class="row">
+  <div class="col-sm-2 preview">
+    <figure> <picture><img src="/assets/img/publication_preview/SAC.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SAC.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+   </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations</div>
     <div class="author">Sojeong Kim, &nbsp;Dongjun Lee,&nbsp;and&nbsp;Jaewang Kim</div>
@@ -35,6 +41,9 @@ nav_order: 1
  </li>
  <li>
   <div class="row">
+  <div class="col-sm-2 preview">
+    <figure> <picture><img src="/assets/img/publication_preview/DiffBias.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="DiffBias.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+   </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Debiasing via Amplifying Bias with Latent Diffusion Model</div>
     <div class="author">" Dongguen Ko, &nbsp;Dongjun Lee, &nbsp;Namjun Park, and " 
