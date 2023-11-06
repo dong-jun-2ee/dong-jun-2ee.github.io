@@ -8,7 +8,7 @@ related_posts: false
 
 `How Important is Periodic Model Update in Recommender System?` was presented at the SIGIR 2023 international conference in Taipei (Oral)!
 
-I attended the International Conference SIGIR 2023 held in Taipei from July 23 to July 27, 2023.
+We attended the International Conference SIGIR 2023 held in Taipei from July 23 to July 27, 2023.
 
 Through presentations and participation in sessions, we studied the latest trends and state-of-the-arts technologies for information retrieval and recommendations and conducted networking.
 
