@@ -7,6 +7,8 @@ nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
+<h1 class="post-title"><a href="/assets/pdf/portfolio.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+
 <div class="publications">
 
 {% bibliography -f {{ site.scholar.bibliography }} %}
