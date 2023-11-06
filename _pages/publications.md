@@ -46,7 +46,7 @@ nav_order: 1
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Debiasing via Amplifying Bias with Latent Diffusion Model</div>
-    <div class="author">" Dongguen Ko, &nbsp;Dongjun Lee, &nbsp;Namjun Park, and " 
+    <div class="author">Dongguen Ko, &nbsp;Dongjun Lee, &nbsp;Namjun Park, and 
      <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Wonkyeong Shim, Jaekwang Kim' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span>
     </div>
     <div class="periodical">underreview</div>

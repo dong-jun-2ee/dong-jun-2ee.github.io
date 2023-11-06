@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-asdasdasd
+`Self-Interactive Attention Networks for CTR Prediction` was accepted at the ISIS 2023 international conference in Gwangju (Oral)!

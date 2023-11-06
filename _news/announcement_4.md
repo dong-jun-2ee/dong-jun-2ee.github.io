@@ -6,4 +6,12 @@ inline: false
 related_posts: false
 ---
 
-10-2023-0150825
+`순차적 추천을 위한 계층적 대조 학습 방법 및 계층적 대조 학습 장치` have been filed in Korea!
+
+---
+    Applicant: Jaekwang Kim / Dongjun Lee / Donggeun Ko
+    Application Number: 10-2023-0150825
+    Application Date: 2023-11-03
+    Application Authority: Korea
+    Name of Application: 순차적 추천을 위한 계층적 대조 학습 방법 및 계층적 대조 학습 장치
+---
