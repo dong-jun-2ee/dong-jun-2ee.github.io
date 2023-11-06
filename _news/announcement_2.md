@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-`AmpliBias\:Mitigating Dataset Bias through Bias Amplification in Few-Shot Learning for Generative Models` was presented at the CIKM 2023 international conference in Birmingham (Poster)!
+`AmpliBias：Mitigating Dataset Bias through Bias Amplification in Few-Shot Learning for Generative Models` was presented at the CIKM 2023 international conference in Birmingham (Poster)!
 
 We attended the International Conference CIKM 2023 held in Birmingham from October 21 to October 25, 2023.
 
