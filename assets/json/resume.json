@@ -4,7 +4,7 @@
     "label": "Graduate Student",
     "image": "/assets/img/prof_pic.jpg",
     "email": "akm5825@naver.com",
-    "phone": "(010) 6654-5239",
+    "phone": "(+82) 010-6654-5239",
     "url": "https://dong-jun-2ee.github.io",
     "summary": "A Korea-born artifical intelligence researcher and data engineer, read up on deep-learning and recommendation system",
     "location": {
@@ -80,27 +80,27 @@
     {
       "title": "Self-Interactive Attention Netwroks for CTR Prediction",
       "releaseDate": "2023-12-06",
-      "institution": "International Symposium on Advanced Intelligent Systems",
+      "publisher": "International Symposium on Advanced Intelligent Systems",
       "url": "https://isis-kiis.org/"
     },
     {
       "title": "Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations",
       "releaseDate": "Submmited",
-      "institution": "",
+      "publisher": "",
       "url": "",
       "summary": "underreview"
     },
     {
       "title": "Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation",
       "releaseDate": "2023-08-07",
-      "institution": "arXiv",
+      "publisher": "arXiv",
       "url": "https://arxiv.org/abs/2308.03400",
       "summary": "underreview"
     },
     {
       "title": "DiffuBias: Leveraging Latent Diffusion Model for Debiasing via Generation",
       "releaseDate": "Submmited",
-      "institution": "",
+      "publisher": "",
       "url": "",
       "summary": "underreview"
     }
