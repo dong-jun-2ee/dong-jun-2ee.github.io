@@ -16,10 +16,10 @@
             {% endfor %}
             <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
           </tr>
-          {% for item, level in content.keywords %}
+          {% for item in content.keywords %}
           <tr>
             <td></td>
-            <td class="list-group-name"><b>{{ item }}</b></td><td class="list-group-name">{{ level }}<</td>
+            <td class="list-group-name"><b>{{ item[1] }}</b>\t{{ item[2] }}</td>
           </tr>
           {% endfor %}
         </tbody>
