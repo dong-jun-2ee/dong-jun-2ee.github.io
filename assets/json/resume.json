@@ -34,12 +34,12 @@
       "endDate": "2024-02-26",
       "score": "4.29/4.5",
       "courses": [
-        "Foundations of Machine Learning", "Image Processing", "Machine Learning", "Advanced Machine Learning", "Computer Vision"
+        "Foundations of Machine Learning", "Image Processing", "Machine Learning", "Advanced Machine Learning", "Computer Vision", "etc"
       ]
     },
     {
       "institution": "Daegu Catholic University, Gyeongsan, Korea",
-      "url": "https://www.dcu.ac.kr/",
+      "url": "https://www.cu.ac.kr/",
       "area": "Computer Science",
       "studyType": "B.S",
       "startDate": "2016-03-01",
@@ -64,28 +64,39 @@
     }
   ],
   "certificates": [],
-  "publications": [{
-    "title": "How Important is Periodic Model update in Recommender System?",
-    "institution": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "publications": [
+    {
+    "name": "How Important is Periodic Model update in Recommender System?",
+    "publisher": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
     "url": "https://dl.acm.org/sig/sigir"
     },
     {
-      "title": "AmpliBias: Mitigating Dataset Bias through Bias Amplification in Few-shot Learning for Generative Models",
-      "institution": "ACM International Conference on Information and Knowledge Management",
+      "name": "AmpliBias: Mitigating Dataset Bias through Bias Amplification in Few-shot Learning for Generative Models",
+      "publisher": "ACM International Conference on Information and Knowledge Management",
       "url": "https://dl.acm.org/conference/cikm"
-      },
-      {
-        "title": "Self-Interactive Attention Netwroks for CTR Prediction",
-        "institution": "International Symposium on Advanced Intelligent Systems",
-        "url": "https://isis-kiis.org/"
-        }
+    },
+    {
+      "title": "Self-Interactive Attention Netwroks for CTR Prediction",
+      "institution": "International Symposium on Advanced Intelligent Systems",
+      "url": "https://isis-kiis.org/"
+    }
   ],
   "skills": [
     {
-      "category": "Programing Language",
-      "icon": "fas fa-code",
-      "items":[{"name":"Python", "level":"Advanced level"}]
-
+      "name": "Programming Languages",
+      "keywords": ["Python","Java","C++", "Javascript", "HTML", "CSS"]
+    },
+    {
+      "name": "Software",
+      "keywords": ["PyCharm","VSCode", "Eclipse", "Excel"]
+    },
+    {
+      "name": "Document composition",
+      "keywords": ["LaTeX", "Word", "Power Point"]
+    },
+    {
+      "name": "Operating systems",
+      "keywords": ["Window", "MacOS", "Linux", "Android"]
     }
   ],
   "languages": [
