@@ -79,8 +79,30 @@
     },
     {
       "title": "Self-Interactive Attention Netwroks for CTR Prediction",
+      "releaseDate": "2023-12-06",
       "institution": "International Symposium on Advanced Intelligent Systems",
       "url": "https://isis-kiis.org/"
+    },
+    {
+      "title": "Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations",
+      "releaseDate": "Submmited",
+      "institution": "",
+      "url": "",
+      "summary": "underreview"
+    },
+    {
+      "title": "Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation",
+      "releaseDate": "2023-08-07",
+      "institution": "arXiv",
+      "url": "https://arxiv.org/abs/2308.03400",
+      "summary": "underreview"
+    },
+    {
+      "title": "DiffuBias: Leveraging Latent Diffusion Model for Debiasing via Generation",
+      "releaseDate": "Submmited",
+      "institution": "",
+      "url": "",
+      "summary": "underreview"
     }
   ],
   "skills": [
