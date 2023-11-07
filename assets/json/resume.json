@@ -87,27 +87,50 @@
     {
       "name": "Programming Languages",
       "icon": "fas fa-code",
-      "keywords": [["Python", "Advanced"],["Java", "Intermediate"],["C++", "Intermediate"], ["Javascript", "Intermediate"], ["HTML", "Intermediate"], ["CSS", "Intermediate"]]
+      "keywords": [
+        {"name":"Python", "level":"Advanced"},
+        {"name":"Java", "level":"Intermediate"},
+        {"name":"C++", "level":"Intermediate"},
+        {"name":"Javascript", "level":"Intermediate"},
+        {"name":"HTML", "level":"Intermediate"},
+        {"name":"CSS", "level":"Intermediate"}]
     },
     {
       "name": "Software",
       "icon": "fas fa-window-maximize",
-      "keywords": [["PyCharm", "Intermediate"],["VSCode", "Advanced"], ["Eclipse", "Intermediate"], ["Excel", "Intermediate"]]
+      "keywords": 
+      [
+        {"name":"PyCharm", "level":"Intermediate"},
+        {"name":"VSCode", "level":"Advanced"},
+        {"name":"Eclipse", "level":"Intermediate"},
+        {"name":"Excel", "level":"Intermediate"}]
     },
     {
       "name": "Document composition",
       "icon": "fas fa-book",
-      "keywords": [["LaTeX", "Advanced"],["HWP", "Advanced"], ["Word", "Intermediate"], ["Power Point", "Advanced"]]
+      "keywords": 
+      [
+        {"name":"LaTeX", "level":"Advanced"},
+        {"name":"HWP", "level":"Advanced"},
+        {"name":"Word", "level":"Intermediate"},
+        {"name":"Power Point", "level":"Advanced"}]
     },
     {
       "name": "Operating systems",
       "icon": "fas fa-desktop",
-      "keywords": [["Window", "Advanced"],["Linux", "Intermediate"], ["Android", "Intermediate"]]
+      "keywords": [
+        {"name":"Window", "level":"Advanced"},
+        {"name":"Linux", "level":"Intermediate"},
+        {"name":"Android", "level":"Intermediate"}]
     },
     {
       "name": "Pakages",
       "icon": "fas fa-toolbox",
-      "keywords": [["Pytorch", "Professional"],["Tensorflow", "Intermediate"], ["Huggingface", "Intermediate"], ["Recbole", "Intermediate"]]
+      "keywords": [
+        {"name":"Pytorch", "level":"Professional"},
+        {"name":"Tensorflow", "level":"Intermediate"},
+        {"name":"Huggingface", "level":"Intermediate"},
+        {"name":"Recbole", "level":"Intermediate"}]
     }
   ],
   "languages": [
