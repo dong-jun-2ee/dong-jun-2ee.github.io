@@ -67,13 +67,15 @@
   "publications": [
     {
     "name": "How Important is Periodic Model update in Recommender System?",
+    "releaseDate": "2023-07-18",
     "publisher": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
-    "url": "https://dl.acm.org/sig/sigir"
+    "url": "https://dl.acm.org/doi/abs/10.1145/3539618.3591934"
     },
     {
       "name": "AmpliBias: Mitigating Dataset Bias through Bias Amplification in Few-shot Learning for Generative Models",
+      "releaseDate": "2023-10-21",
       "publisher": "ACM International Conference on Information and Knowledge Management",
-      "url": "https://dl.acm.org/conference/cikm"
+      "url": "https://dl.acm.org/doi/10.1145/3583780.3615184"
     },
     {
       "title": "Self-Interactive Attention Netwroks for CTR Prediction",
@@ -84,19 +86,28 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Python","Java","C++", "Javascript", "HTML", "CSS"]
+      "icon": "fas fa-code",
+      "keywords": [["Python", "Advanced"],["Java", "Intermediate"],["C++", "Intermediate"], ["Javascript", "Intermediate"], ["HTML", "Intermediate"], ["CSS", "Intermediate"]]
     },
     {
       "name": "Software",
-      "keywords": ["PyCharm","VSCode", "Eclipse", "Excel"]
+      "icon": "fas fa-window-maximize",
+      "keywords": [["PyCharm", "Intermediate"],["VSCode", "Advanced"], ["Eclipse", "Intermediate"], ["Excel", "Intermediate"]]
     },
     {
       "name": "Document composition",
-      "keywords": ["LaTeX", "Word", "Power Point"]
+      "icon": "fas fa-book",
+      "keywords": [["LaTeX", "Advanced"],["HWP", "Advanced"], ["Word", "Intermediate"], ["Power Point", "Advanced"]]
     },
     {
       "name": "Operating systems",
-      "keywords": ["Window", "MacOS", "Linux", "Android"]
+      "icon": "fas fa-desktop",
+      "keywords": [["Window", "Advanced"],["Linux", "Intermediate"], ["Android", "Intermediate"]]
+    },
+    {
+      "name": "Pakages",
+      "icon": "fas fa-toolbox",
+      "keywords": [["Pytorch", "Professional"],["Tensorflow", "Intermediate"], ["Huggingface", "Intermediate"], ["Recbole", "Intermediate"]]
     }
   ],
   "languages": [
