@@ -21,7 +21,7 @@ nav_order: 1
     <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/SIAN-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/SIAN-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/SIAN-1400.webp"> <img src="/assets/img/publication_preview/SIAN.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SIAN.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission1" class="col-sm-8">
-    <div class="title">Self-Interactive Attention Networks for CTR Prediction</div>
+    <div class="title">Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction</div>
     <div class="author">Dongjun Lee, &nbsp;Hyunsung Lee,&nbsp;and&nbsp;Jaewang Kim</div>
     <div class="periodical"><em>In Proceedings of the 24nd International Symposium on Advanced Intelligent Systems</em>, 2023 (accepted)</div>
     <div class="periodical"> </div>
@@ -36,7 +36,7 @@ nav_order: 1
    <div id="submission2" class="col-sm-8">
     <div class="title">Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations</div>
     <div class="author">Sojeong Kim, &nbsp;Dongjun Lee,&nbsp;and&nbsp;Jaewang Kim</div>
-    <div class="periodical">underreview</div>
+    <div class="periodical">Accepted</div>
     <div class="periodical"> </div>
    </div>
   </div>

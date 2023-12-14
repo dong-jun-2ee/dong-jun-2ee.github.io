@@ -1,10 +1,11 @@
 ---
 layout: post
-title: A patent “Elevating CTR Prediction&#x3a; Field Interaction, Global Context Integration, and High-Order Representations” have been accepted in ACM/SIGAPP Symposium On Applied Computing (SAC) !
-date: 2023-11-27 15:25:00-0400
+title: “Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction” was presented at the ISIS 2023 international conference (Oral)! and won the best paper award.
+date: 2023-12-07 09:00:00-0400
 inline: false
 related_posts: false
 ---
 
-`Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations` have been accepted in ACM/SIGAPP Symposium On Applied Computing (SAC - Poster)!
+`Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction` was presented at the ISIS 2023 international conference in Gwangju (Oral)!
 
+We won the best paper awards !

@@ -30,7 +30,7 @@
       "url": "https://www.skku.edu/",
       "area": "Artifical Intelligence",
       "studyType": "Master",
-      "startDate": "2022-02-28",
+      "startDate": "2022-02-21",
       "endDate": "2024-02-26",
       "score": "4.29/4.5",
       "courses": [
@@ -51,6 +51,11 @@
     }
   ],
   "awards": [
+    {
+      "title": "Best Paper Awards",
+      "date": "2023-12-09",
+      "awarder": "International Symposium on Advanced Intelligent Systems"
+    },
     {
       "title": "Commendation in B.S. Degree",
       "date": "2022-02-18",
@@ -78,17 +83,16 @@
       "url": "https://dl.acm.org/doi/10.1145/3583780.3615184"
     },
     {
-      "name": "Self-Interactive Attention Netwroks for CTR Prediction",
+      "name": "Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction",
       "releaseDate": "2023-12-06",
       "publisher": "International Symposium on Advanced Intelligent Systems",
       "url": "https://isis-kiis.org/"
     },
     {
       "name": "Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations",
-      "releaseDate": "Submmited",
-      "publisher": "",
-      "url": "",
-      "summary": "underreview"
+      "releaseDate": "Accepted",
+      "publisher": "ACM/SIGAPP Symposium On Applied Computing",
+      "url": ""
     },
     {
       "name": "Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation",
