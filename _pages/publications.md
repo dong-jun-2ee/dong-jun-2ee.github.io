@@ -23,7 +23,7 @@ nav_order: 1
    <div id="submission1" class="col-sm-8">
     <div class="title">Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction</div>
     <div class="author">Dongjun Lee, &nbsp;Hyunsung Lee,&nbsp;and&nbsp;Jaewang Kim</div>
-    <div class="periodical"><em>In Proceedings of the 24nd International Symposium on Advanced Intelligent Systems</em>, 2023 (accepted)</div>
+    <div class="periodical"><em>In Proceedings of the 24nd International Symposium on Advanced Intelligent Systems</em>, 2023 </div>
     <div class="periodical"> </div>
    </div>
   </div>
@@ -36,7 +36,7 @@ nav_order: 1
    <div id="submission2" class="col-sm-8">
     <div class="title">Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations</div>
     <div class="author">Sojeong Kim, &nbsp;Dongjun Lee,&nbsp;and&nbsp;Jaewang Kim</div>
-    <div class="periodical">Accepted</div>
+    <div class="periodical"><em>The 39th ACM/SIGAPP Symposium On Applied Computing</em>, 2024 </div>
     <div class="periodical"> </div>
    </div>
   </div>
