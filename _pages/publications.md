@@ -21,7 +21,7 @@ nav_order: 1
     <div class="author">Namjun Park, &nbsp;Dongguen Ko, &nbsp;Dongjun Lee, and 
      <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'San Kim, Jaekwang Kim' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span>
     </div>
-    <div class="periodical">underreview</div>
+    <div class="periodical"><em>AAAI 2024 Spring Symposium on Clinical Foundation Models</em>, 2024 (accepted)</div>
     <div class="periodical"> </div>
    </div>
   </div>
