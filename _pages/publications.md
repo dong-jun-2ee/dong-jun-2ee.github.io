@@ -10,6 +10,23 @@ nav_order: 1
 <h1 class="post-title"><a href="/assets/pdf/portfolio.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a></h1>
 
 <div class="publications">
+<ol class="bibliography">
+<li>
+  <div class="row">
+  <div class="col-sm-2 preview">
+    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/AAAI[SSS]-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/AAAI[SSS]-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/AAAI[SSS]-1400.webp"> <img src="/assets/img/publication_preview/AAAI[SSS].png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="AAAI[SSS].png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+   </div>
+   <div id="submission3" class="col-sm-8">
+    <div class="title">Retrieval-Based Disease Prediction for Myocardial Injury after Noncardiac Surgery: Leveraging Language Models as Diagnostic Tools</div>
+    <div class="author">Namjun Park, &nbsp;Dongguen Ko, &nbsp;Dongjun Lee, and 
+     <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'San Kim, Jaekwang Kim' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.text(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span>
+    </div>
+    <div class="periodical">underreview</div>
+    <div class="periodical"> </div>
+   </div>
+  </div>
+ </li>
+ </ol>
 
 {% bibliography -f {{ site.scholar.bibliography }} %}
 <!-- submissions -->
@@ -56,7 +73,6 @@ nav_order: 1
    </div>
   </div>
  </li>
-
 </ol>
 
 </div>
