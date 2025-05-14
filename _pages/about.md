@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>30, Changeop-ro 40beon-gil, Sujeong-gu</p>
+    <p>30, Changeop-ro 40 beon-gil, Sujeong-gu</p>
     <p>Seongnam-si, Gyeonggi-do, Republic of Korea</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
