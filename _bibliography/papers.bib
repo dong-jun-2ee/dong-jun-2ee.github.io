@@ -103,14 +103,20 @@ preview={amplibias.png}
   preview={sian.png}
 }
 
-@inproceedings{kim2025elevating,
-  title={Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations},
-  author={Kim, Sojeong and Lee, Dongjun and Kim, Jaekwang},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  abstract = {Recommendation systems have been increasingly prevalent in online applications. Click-through rate (CTR) prediction leverages the interactions among attributes to estimate the probability of click on items. For CTR prediction, attention based models are common as a means to efficiently learn interactions between attribute features. In this study, Our objective is to improve the performance by addressing the limitations of self-attention in handling three specific aspects. Firstly, while self-attention addresses feature interactions, it does not consider the relationships between fields. Hence, we propose to introduce interaction weights that can capture field interaction strength. And, self-attention performs normalization after calculating based on pairs of two features. However, when a specific feature combination exhibits a strong relationship, other features are expressed with very small values, resulting in instances having almost identical values. In other words, it implies that the information is only partially reflected. To address this, we implement a recommendation algorithm that incorporates Multi-layer Perceptron (MLP) and Squeeze and Excitation Networks (SENET) to incorporate global information of instances. Lastly, despite stacking self-attention layers multiple times, it remains challenging to create explicit high-order representations. To tackle this issue, we have incorporated an additional module that captures explicit high-order information. As experimental results, our proposed model demonstrates performance improvements in CTR prediction compared to all state-of-art baseline models across three public datasets.},
-  booktitle = {Proceedings of the 39th ACM/SIGAPP Symposium On Applied Computing},
-  year={2024},
-  series = {SAC '24},
-  preview={overcome_ctr.png}
+@inproceedings{10.1145/3605098.3636105,
+author = {Kim, Sojeong and Lee, Dongjun and Kim, Jaekwang},
+title = {Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations},
+year = {2024},
+isbn = {9798400702433},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3605098.3636105},
+doi = {10.1145/3605098.3636105},
+abstract = {Recommendation systems have been increasingly prevalent in online applications. For CTR prediction, attention based models are common as a means to efficiently learn interactions between attribute features. However, self-attention has limitations, such as not considering relationships between fields and causing partial information reflection when specific feature combinations have strong relationships. To enhance this, the research introduces interaction weights to capture field relationships and incorporates Multi-layer Perceptron (MLP) and Squeeze and Excitation Networks (SENET) to include global information. Additionally, an extra module is added to address the challenge of creating explicit high-order representations. Experimental results show that the proposed model outperforms all state-of-the-art baseline models in CTR prediction across three public datasets.},
+booktitle = {Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing},
+pages = {1040–1042},
+numpages = {3},
+keywords = {CTR prediction, self-attention, field interaction strengths, global information, high-order feature interactions},
+location = {Avila, Spain},
+series = {SAC '24}
 }
