@@ -10,12 +10,14 @@ nav_order: 1
 
 <h1 class="post-title"><a href="/assets/pdf/portfolio.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a></h1>
 {% include bib_search.liquid %}
+
 <div class="publications">
+
 <ol class="bibliography">
 <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/C_3-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/C_3-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/C_3-1400.webp"> <img src="/assets/img/publication_preview/C_3.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="C_3.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/C_3.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="C_3.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">$C^3$: Capturing Consensus with Contrastive Learning in Group Recommendation</div>
@@ -29,7 +31,7 @@ nav_order: 1
 <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/HCLREC-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/HCLREC-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/HCLREC-1400.webp"> <img src="/assets/img/publication_preview/HCLREC.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="HCLREC.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/HCLREC.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="HCLREC.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation</div>
@@ -42,7 +44,7 @@ nav_order: 1
  <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/DiffBias-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/DiffBias-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/DiffBias-1400.webp"> <img src="/assets/img/publication_preview/DiffBias.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="DiffBias.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/diffubias.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="DiffBias.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models</div>
@@ -57,7 +59,7 @@ nav_order: 1
 <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/cvprw-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/cvprw-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/cvprw-1400.webp"> <img src="/assets/img/publication_preview/cvprw.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="cvprw.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/cvprw.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="cvprw.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission4" class="col-sm-8">
     <div class="title">DiffInject: Revisiting Debias via Synthetic Data Generation using Diffusion-based Style Injection</div>
@@ -72,7 +74,7 @@ nav_order: 1
 <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/AAAI[SSS]-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/AAAI[SSS]-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/AAAI[SSS]-1400.webp"> <img src="/assets/img/publication_preview/AAAI[SSS].png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="AAAI[SSS].png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/AAAI[SSS].png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="AAAI[SSS].png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission3" class="col-sm-8">
     <div class="title">Retrieval-Based Disease Prediction for Myocardial Injury after Noncardiac Surgery: Leveraging Language Models as Diagnostic Tools</div>
@@ -88,14 +90,11 @@ nav_order: 1
 
 {% bibliography %}
 
-<!--{% bibliography -f {{ site.scholar.bibliography }} %} -->
-<!-- submissions -->
 <ol class="bibliography">
-
  <li>
   <div class="row">
    <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/SIAN-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/SIAN-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/SIAN-1400.webp"> <img src="/assets/img/publication_preview/SIAN.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SIAN.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/sian.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="sian.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission1" class="col-sm-8">
     <div class="title">Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction</div>
@@ -108,7 +107,7 @@ nav_order: 1
  <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/SAC-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/SAC-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/SAC-1400.webp"> <img src="/assets/img/publication_preview/SAC.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SAC.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/publication_preview/overcome_ctr.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SAC.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations</div>
