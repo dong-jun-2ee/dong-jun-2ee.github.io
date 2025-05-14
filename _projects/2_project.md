@@ -2,7 +2,7 @@
 layout: page
 title: Small Langauge Model
 description: Training small language models for on-device deployment.
-img: assets/img/qualcomm.png
+img: assets/img/slm.png
 redirect: https://www.namuhx.com
 importance: 2
 category: work

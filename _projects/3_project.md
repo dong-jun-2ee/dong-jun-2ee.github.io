@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Korean Reasonging Model
+title: Korean Reasoning Model
 description: Training an o1-like large language model capable of reasoning and responding in Korean.
 img: assets/img/reasoning.png
 importance: 2
