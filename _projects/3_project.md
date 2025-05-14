@@ -2,18 +2,18 @@
 layout: page
 title: Korean Reasonging Model
 description: Training an o1-like large language model capable of reasoning and responding in Korean.
-img: assets/img/o1-like.png
+img: assets/img/reasoning.png
 importance: 2
 category: work
 ---
 
 ## Summary
 
-Recently, models equipped with reasoning capabilities have demonstrated remarkable performance, such as [ChatGPT-o1] (https://arxiv.org/abs/2412.16720).
+Recently, models equipped with reasoning capabilities have demonstrated remarkable performance, such as [ChatGPT-o1](https://arxiv.org/abs/2412.16720).
 
-In the open research community, [Deepseek-AI] (https://arxiv.org/abs/2501.12948) provides recipes for building o1-like models, paving the way to equip models with reasoning capabilities.
+In the open research community, [Deepseek-AI](https://arxiv.org/abs/2501.12948) provides recipes for building o1-like models, paving the way to equip models with reasoning capabilities.
 
-Similarly, using the [verl] (https://github.com/volcengine/verl) repository, we trained a large language model that generates its own reasoning process to improve performance. In particular, unlike the open o1-like models that support only English responses, we aligned our model to generate both reasoning traces and final summaries (i.e., primarily tokens without mathematical notation or code) in Korean.
+Similarly, using the [verl](https://github.com/volcengine/verl) repository, we trained a large language model that generates its own reasoning process to improve performance. In particular, unlike the open o1-like models that support only English responses, we aligned our model to generate both reasoning traces and final summaries (i.e., primarily tokens without mathematical notation or code) in Korean.
 
 We achieved performance improvements of up to 15% points over the original model, despite constraints on language consistency.
 
@@ -37,18 +37,18 @@ We generated responses to the same prompts from multiple models. In addition, we
 
 ### Knowledge Distillation
 
-We trained the model to generate reasoning trajectories using [Qwen2.5-1.5B-Instruct] (https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) for this work. This model was chosen due to its strong performance in both Korean and English, as well as its permissive commercial use.
+We trained the model to generate reasoning trajectories using [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) for this work. This model was chosen due to its strong performance in both Korean and English, as well as its permissive commercial use.
 
 Using the prompt-response pairs generated in the previous stage, we performed black-box distillation, which enabled the model to learn how to generate thoughts from cold-start data.
 
 
 ### Reward Modeling
 
-To assign rewards for general conversation, we built a reward model that supports Korean. This process mainly followed the pipeline of [Skyword-Reward] (https://arxiv.org/abs/2410.18451), and we used publicly available models that support Korean to generate Korean response (chosen, rejected) pairs (e.g., [Mistral] (https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501), [Qwen] (https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)). 
+To assign rewards for general conversation, we built a reward model that supports Korean. This process mainly followed the pipeline of [Skyword-Reward](https://arxiv.org/abs/2410.18451), and we used publicly available models that support Korean to generate Korean response (chosen, rejected) pairs (e.g., [Mistral](https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501), [Qwen](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)). 
 
 Based on the generated responses, we assigned rewards using three open reward models. After performing re-centering based on the performance of each model, we constructed three types of preference datasets (chosen, rejected pairs).
 
-We trained the reward model using each type of dataset, and selected the final model by evaluating its performance on [RewardBench] (https://arxiv.org/abs/2403.13787) and [Multilingual Reward Bench] (https://arxiv.org/abs/2410.15522).
+We trained the reward model using each type of dataset, and selected the final model by evaluating its performance on [RewardBench](https://arxiv.org/abs/2403.13787) and [Multilingual Reward Bench](https://arxiv.org/abs/2410.15522).
 
 
 ### Reinforcement Learning
@@ -57,7 +57,7 @@ At this stage, our goal was to endow the chat model obtained from the knowledge 
 
 Unlike previous successful reproductions, we additionally applied a language consistency reward, focusing on aligning the language used between the input prompt and the generated thought. One of the key insights from this process was that removing code snippets, mathematical equations, and markdown elements was crucial for preventing reward hacking.
 
-We were able to accomplish this task by applying the [GRPO] (https://arxiv.org/abs/2402.03300) reinforcement learning method.
+We were able to accomplish this task by applying the [GRPO](https://arxiv.org/abs/2402.03300) reinforcement learning method.
 
 
 ## Results
