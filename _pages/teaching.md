@@ -12,7 +12,7 @@ nav_order: 4
  <li>
   <div class="row">
    <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/skku-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/skku-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/skku-1400.webp"> <img src="/assets/img/skku.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/skku.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission1" class="col-sm-8">
     <div class="title">SW인재양성교육 : Programming Practice Instructor</div>
@@ -25,7 +25,7 @@ nav_order: 4
  <li>
   <div class="row">
    <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/lg-dacon-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/lg-dacon-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/lg-dacon-1400.webp"> <img src="/assets/img/lg-dacon.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lg-dacon.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/lg-dacon.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="lg-dacon.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission1" class="col-sm-8">
     <div class="title">Educational Materials Assistant</div>
@@ -37,7 +37,7 @@ nav_order: 4
  <li>
   <div class="row">
   <div class="col-sm-2 preview">
-    <figure> <picture> <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/nh-skku-480.webp"> <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/nh-skku-800.webp"> <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/nh-skku-1400.webp"> <img src="/assets/img/nh-skku.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="nh-skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
+    <figure> <picture> <img src="/assets/img/nh-skku.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="nh-skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
    </div>
    <div id="submission2" class="col-sm-8">
     <div class="title">Programming Practice Instructor</div>
