@@ -13,8 +13,8 @@ We attended the International Conference CIKM 2023 held in Birmingham from Octob
 Through attendace in poster and oral sessions, we looked into the research trends for language models and recommendations and networked with another community reseachers.
 
 <div class="row">
-    <div class="col-sm mt-10 mt-md-0">
-        {% include figure.html path="assets/img/cikm.jpg" title="CIKM 2023" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-5 mt-md-0">
+        <figure> <picture> <img src="/assets/img/cikm.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
     </div>
 </div>
 
