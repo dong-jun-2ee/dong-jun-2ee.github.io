@@ -16,26 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
         },{id: "nav-projects",
           title: "projects",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "cv",
@@ -46,33 +32,12 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Teaching Assistant(T/A) during the master degree and Educational materials assistant",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-a-post-with-plotly-js",
+        },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -440,18 +405,52 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-how-important-is-periodic-model-update-in-recommender-system-was-presented-at-the-international-conference-sigir-2023-in-taipei-oral",
+          title: '“How Important is Periodic Model Update in Recommender System?” was presented at the...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1/";
+            },},{id: "news-amplibias-amp-x3a-mitigating-dataset-bias-through-bias-amplification-in-few-shot-learning-for-generative-models-was-presented-at-the-cikm-2023-international-conference-in-birmingham-poster",
+          title: '“AmpliBias&amp;amp;#x3a; Mitigating Dataset Bias through Bias Amplification in Few-Shot Learning for Generative Models”...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-a-patent-순차적-추천을-위한-계층적-대조-학습-방법-및-계층적-대조-학습-장치-have-been-filed-in-korea",
+          title: 'A patent “순차적 추천을 위한 계층적 대조 학습 방법 및 계층적 대조 학습...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "news-a-patent-elevating-ctr-prediction-amp-x3a-field-interaction-global-context-integration-and-high-order-representations-have-been-accepted-in-acm-sigapp-symposium-on-applied-computing-sac",
+          title: 'A patent “Elevating CTR Prediction&amp;amp;#x3a; Field Interaction, Global Context Integration, and High-Order Representations”...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
+            },},{id: "news-self-interactive-attention-netwroks-via-factorization-machinces-for-click-through-rate-prediction-was-presented-at-the-isis-2023-international-conference-oral-and-won-the-best-paper-award",
+          title: '“Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction” was presented at...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_5/";
+            },},{id: "news-retrieval-based-disease-prediction-for-myocardial-injury-after-noncardiac-surgery-amp-x3a-leveraging-language-models-as-diagnostic-tools-was-accepted-at-the-aaai-2024-spring-symposium-on-clinical-foundation-models-in-stanford-university-stanford-california-poster",
+          title: '“Retrieval-Based Disease Prediction for Myocardial Injury after Noncardiac Surgery&amp;amp;#x3a; Leveraging Language Models as...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_6/";
+            },},{id: "news-diffinject-amp-x3a-revisiting-debias-via-synthetic-data-generation-using-diffusion-based-style-injection-was-accepted-at-the-ieee-cvf-computer-vision-and-pattern-recognition-conference-cvpr-2024-workshop-in-syndata4cv",
+          title: '“DiffInject&amp;amp;#x3a; Revisiting Debias via Synthetic Data Generation using Diffusion-based Style Injection” was accepted...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_7/";
+            },},{id: "news-hierarchical-contrastive-learning-with-multiple-augmentations-for-sequential-recommendation-was-accepted-in-acm-sigapp-symposium-on-applied-computing-sac",
+          title: '“Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation” was accepted in ACM/SIGAPP...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_8/";
+            },},{id: "news-debiasing-classifiers-by-amplifying-bias-with-latent-diffusion-and-large-language-models-was-accepted-in-acm-sigapp-symposium-on-applied-computing-sac",
+          title: '“Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models” was...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_9/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -501,35 +500,35 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%61%6B%6D%35%38%32%35@%6E%61%76%65%72.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-instagram',
+        title: 'Instagram',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://instagram.com/hi_junni", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/dongjun-lee-abb658326", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0004-1397-0855", "_blank");
         },
       },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://scholar.google.com/citations?user=vqarHmYAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
