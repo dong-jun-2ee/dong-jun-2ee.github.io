@@ -2,6 +2,7 @@
 layout: page
 title: Vocabulary Expansion
 description: Expanding vocabulary of large language model to include Korean language capabilities.
+img: assets/img/ve.png
 importance: 2
 category: work
 ---

@@ -2,6 +2,7 @@
 layout: page
 title: Domain Adaptation
 description: Training a large language model capable of understanding domain-specific task.
+img: assets/img/da.png
 importance: 3
 category: work
 ---

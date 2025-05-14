@@ -2,6 +2,7 @@
 layout: page
 title: Knowledge Distillation
 description: Transferring the capabilities of a large language model to a smaller one.
+img: assets/img/kd.png
 importance: 2
 category: work
 ---
