@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Domain Adaptation
+description: Training a large language model capable of understanding domain-specific task.
 importance: 3
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,13 +1,14 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+title: Korean Reasonging Model
+description: Training an o1-like large language model capable of reasoning and responding in Korean.
+img: assets/img/o1-like.png
+redirect: https://arxiv.org/abs/2501.12948
+importance: 2
 category: work
 ---
 
+Reward modeling
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.

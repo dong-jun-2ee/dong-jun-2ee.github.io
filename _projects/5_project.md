@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Vocabulary Expansion
+description: Expanding vocabulary of large language model to include Korean language capabilities.
+importance: 2
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
