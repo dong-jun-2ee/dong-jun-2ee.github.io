@@ -14,10 +14,10 @@ Through presentations and participation in sessions, we studied the latest trend
 
 <div class="row">
     <div class="col-sm mt-5 mt-md-0">
-        {% include figure.html path="assets/img/sigir.jpg" title="SIGIR session" class="img-fluid rounded z-depth-1" %}
+        <figure> <picture> <img src="/assets/img/sigir.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
     </div>
     <div class="col-sm mt-5 mt-md-0">
-        {% include figure.html path="assets/img/sigir2.jpg" title="SIGIR Presentation" class="img-fluid rounded z-depth-1" %}
+        <figure> <picture> <img src="/assets/img/sigir2.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="skku.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture></figure>
     </div>
 </div>
 <div class="caption">
