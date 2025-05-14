@@ -460,8 +460,8 @@ ninja.data = [{
           description: "Training small language models for on-device deployment.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-korean-reasonging-model",
-          title: 'Korean Reasonging Model',
+            },},{id: "projects-korean-reasoning-model",
+          title: 'Korean Reasoning Model',
           description: "Training an o1-like large language model capable of reasoning and responding in Korean.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
