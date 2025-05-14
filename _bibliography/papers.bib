@@ -38,5 +38,79 @@ keywords = {debiasing, few-shot learning, generative model},
 location = {Birmingham, United Kingdom},
 series = {CIKM '23},
 selected={true},
-preview={AmpliBias.png}
+preview={ampliBias.png}
+}
+
+@article{kim2025c3,
+  title={$C^3$: Capturing Consensus with Contrastive Learning in Group Recommendation},
+  author={Kim, Soyoung and Lee, Dongjun and Kim, Jaekwang},
+  journal={underreview},
+  year={2025},
+  preview={C_3.png}
+}
+
+@inproceedings{lee2025sequential,
+  title={Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation},
+  author={Lee, Dongjun and Ko, Donggeun and Kim, Jaekwang},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  abstract = {Sequential recommendation aims to predict users' next actions by analyzing their historical behavior. Lately, contrastive learning has become prominent in this domain, especially when user interactions with items are sparse. Although data augmentation methods have flourished in fields like computer vision, their potential in sequential recommendation remains under-explored. Thus, we present Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation (HCLRec), a novel framework that harnesses multiple augmentation techniques to create diverse views on user sequences. This framework systematically employs existing augmentation techniques, creating a hierarchy to generate varied views. First, we augment the input sequences to various views using multiple augmentations. Through the continuous composition of these augmentation methods, we formulate both low-level and high-level view pairs. Second, an effective sequence-based encoder is used to embed input sequences, complemented by the supplementary blocks to capture users' nonlinear behaviors, which are further varied by augmentations. Input sequences are routed to subsequent layers based on the number of augmentations applied, helping the model discern intricate sequential patterns intensified by these augmentations. Finally, contrastive losses is calculated between view pairs of the same level within each layer. This allows the encoder to learn from the contrastive losses between augmented views of the same level, and the gap caused by different information between the low-level views and high-level views by multiple augmentations is reduced. In evaluations, HCLRec outperforms state-of-the-art methods by up to 7.22% and demonstrates its effectiveness in handling sparse data. },
+  booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium On Applied Computing},
+  year={2025},
+  series = {SAC '25},
+  selected={true},
+  preview={C_3.png}
+}
+
+@inproceedings{ko2025debiasing,
+  title={Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models},
+  author={Ko, Donggeun and Lee, Dongjun and and Park, Namjun and Shim, Wonkyeong and Kim, Jaekwang},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  abstract = {Neural networks struggle with image classification when biases are learned and misleads correlations, affecting their generalization and performance. Previous methods require attribute labels (e.g. background, color) or utilizes Generative Adversarial Networks (GANs) to mitigate biases. We introduce DiffuBias, a novel pipeline for text-to-image generation that enhances classifier robustness by generating bias-conflict samples, without requiring training during the generation phase. Utilizing pretrained diffusion and image captioning models, DiffuBias generates images that challenge the biases of classifiers, using the top-$K$ losses from a biased classifier ($f_B$) to create more representative data samples. This method not only debiases effectively but also boosts classifier generalization capabilities. To the best of our knowledge, DiffuBias is the first approach leveraging a stable diffusion model to generate bias-conflict samples in debiasing tasks. Our comprehensive experimental evaluations demonstrate that DiffuBias achieves state-of-the-art performance on benchmark datasets. We also conduct a comparative analysis of various generative models in terms of carbon emissions and energy consumption to highlight the significance of computational efficiency.},
+  booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium On Applied Computing},
+  year={2025},
+  series = {SAC '25},
+  preview={diffubias.png}
+}
+
+@article{ko2024diffinject,
+  title={Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models},
+  author={Ko, Donggeun and Lee, Dongjun and and Park, Namjun and Shim, Wonkyeong and Kim, Jaekwang},
+  address = {New York, NY, USA},
+  abstract = {Dataset bias is a significant challenge in machine learning, where specific attributes, such as texture or color of the images are unintentionally learned resulting in detrimental performance. To address this, previous efforts have focused on debiasing models either by developing novel debiasing algorithms or by generating synthetic data to mitigate the prevalent dataset biases. However, generative approaches to date have largely relied on using bias-specific samples from the dataset, which are typically too scarce. In this work, we propose, DiffInject, a straightforward yet powerful method to augment synthetic bias-conflict samples using a pretrained diffusion model. This approach significantly advances the use of diffusion models for debiasing purposes by manipulating the latent space. Our framework does not require any explicit knowledge of the bias types or labelling, making it a fully unsupervised setting for debiasing. Our methodology demonstrates substantial result in effectively reducing dataset bias.},
+  booktitle = {IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2024 Workshop in SynData4CV},
+  year={2024},
+  preview={cvprw.png}
+}
+
+@article{park2024retrieval,
+  title={Retrieval-Based Disease Prediction for Myocardial Injury after Noncardiac Surgery: Leveraging Language Models as Diagnostic Tools},
+  author={Park, Namjun and Ko, Donggeun and and Lee, Dongjun and Kim, San and Kim, Jaekwang},
+  abstract = {Dataset bias is a significant challenge in machine learning, where specific attributes, such as texture or color of the images are unintentionally learned resulting in detrimental performance. To address this, previous efforts have focused on debiasing models either by developing novel debiasing algorithms or by generating synthetic data to mitigate the prevalent dataset biases. However, generative approaches to date have largely relied on using bias-specific samples from the dataset, which are typically too scarce. In this work, we propose, DiffInject, a straightforward yet powerful method to augment synthetic bias-conflict samples using a pretrained diffusion model. This approach significantly advances the use of diffusion models for debiasing purposes by manipulating the latent space. Our framework does not require any explicit knowledge of the bias types or labelling, making it a fully unsupervised setting for debiasing. Our methodology demonstrates substantial result in effectively reducing dataset bias.},
+  booktitle = {AAAI 2024 Spring Symposium on Clinical Foundation Models},
+  year={2024},
+  preview={AAAI[SSS].png}
+}
+
+@inproceedings{lee202selinteractive,
+  title={Self-Interactive Attention Netwroks via Factorization Machinces for Click-Through Rate Prediction},  
+  author={Lee, Dongjun and Lee, Hyunsung and Kim, Jaekwang},
+  abstract = {Click-through rate prediction is the task of estimating the likelihood that the target users would click on recommendations of a website (e.g., advertisements or product lists). As data complexity and volume increase, recommending suitable items for individuals has become economically critical for online applications; however, it remains challenging because the inputs for the prediction model are typically sparse and have high-dimensional categorical features. Owing to the outstanding performance of deep-learning models over classical methods, several deep-learning approaches for learning low- and high-order interactions from the aforementioned inputs have been proposed. However, feed-forward networks are inefficient at capturing common feature interactions and have limited ability to model functions with high-order interactions, efficiently. Furthermore, as the model layer becomes more complex, reflecting loworder interactions to output becomes more demanding. In this paper, we propose SelfInteractive Attention Networks that explicitly captures high-order interactions and reflect low-order interactions in the final prediction. We continuously feed low-order interactions captured via Factorization Machines to the attention layer to carry loworder interactions into the final prediction. We demonstrate that our model outperforms state-of-the-art methods through experiments on two real-world datasets and verify the effectiveness of proposed model.},
+  booktitle = {In Proceedings of the 24nd International Symposium on Advanced Intelligent Systems},
+  year={2024},
+  series = {ISIS '24},
+  preview={sian.png}
+}
+
+@inproceedings{kim2025elevating,
+  title={Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations},
+  author={Kim, Sojeong and Lee, Dongjun and Kim, Jaekwang},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  abstract = {Recommendation systems have been increasingly prevalent in online applications. Click-through rate (CTR) prediction leverages the interactions among attributes to estimate the probability of click on items. For CTR prediction, attention based models are common as a means to efficiently learn interactions between attribute features. In this study, Our objective is to improve the performance by addressing the limitations of self-attention in handling three specific aspects. Firstly, while self-attention addresses feature interactions, it does not consider the relationships between fields. Hence, we propose to introduce interaction weights that can capture field interaction strength. And, self-attention performs normalization after calculating based on pairs of two features. However, when a specific feature combination exhibits a strong relationship, other features are expressed with very small values, resulting in instances having almost identical values. In other words, it implies that the information is only partially reflected. To address this, we implement a recommendation algorithm that incorporates Multi-layer Perceptron (MLP) and Squeeze and Excitation Networks (SENET) to incorporate global information of instances. Lastly, despite stacking self-attention layers multiple times, it remains challenging to create explicit high-order representations. To tackle this issue, we have incorporated an additional module that captures explicit high-order information. As experimental results, our proposed model demonstrates performance improvements in CTR prediction compared to all state-of-art baseline models across three public datasets.},
+  booktitle = {Proceedings of the 39th ACM/SIGAPP Symposium On Applied Computing},
+  year={2024},
+  series = {SAC '24},
+  preview={overcome_ctr.png}
 }
