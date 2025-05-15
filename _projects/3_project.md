@@ -15,7 +15,7 @@ In the open research community, [Deepseek-AI](https://arxiv.org/abs/2501.12948) 
 
 Similarly, using the [verl](https://github.com/volcengine/verl) repository, we trained a large language model that generates its own reasoning process to improve performance. In particular, unlike the open o1-like models that support only English responses, we aligned our model to generate both reasoning traces and final summaries (i.e., primarily tokens without mathematical notation or code) in Korean.
 
-We achieved performance improvements of up to 15% points over the original model, despite constraints on language consistency.
+We achieved performance improvements of up to 18.67% points over the original model, despite constraints on language consistency.
 
 ## Training Pipeline
 
@@ -138,3 +138,18 @@ On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited 
     ---
 
 ## Discussion
+
+During the course of the project, we derived the following N insights. Furthermore, techniques aimed at enhancing reasoning capabilities, which emerged during the project, have been internalized as proprietary assets within the organization.
+
+- Utilizing overly difficult samples during the knowledge distillation phase can lead to performance degradation. This phenomenon is closely related to the capability of the backbone model.
+    - For instance, the model trained on data distilled from Qwen2.5-1.5B-Math-Instruct demonstrates superior performance on mathematical benchmarks.
+- Applying rule-based rewards through formatting functions initially leads to a reduction in the number of generated tokens, as the model prioritizes preserving the target format during early training stages. This trend gradually reverses over time and is particularly pronounced compared to the knowledge distillation phase.
+- When enforcing rules to maintain language consistency, applying rewards based on the proportion of tokens generated during the "thinking process" tends to suppress the generation of mathematical equations or code blocks.
+    - Even subtle differences in reward can lead to reward hacking, causing the model to converge on trivial solutions.
+    - This issue can arise even in the absence of ratio-based rewards if there is no rule to explicitly disregard equations or code blocks.
+- During reward model training, the presence or absence of reasoning data significantly impacts performance on general conversation tasks.
+    - This phenomenon may indicate a limitation tied to the size of the reward model, warranting further investigation.
+    - In this project, rule-based rewards were applied to reasoning data (mathematics), and the reward model was trained excluding these samples.
+- A greater number of rollouts per query and larger batch sizes are effective for improving model performance and accelerating training.
+    - Samples that are either too easy (i.e., correct answers across all rollouts for a given query) or too difficult (i.e., incorrect answers across all rollouts) do not contribute meaningfully to learning.
+    - Samples that are appropriately challenging—where the model can occasionally produce the correct answer within certain episodes—contribute significantly to performance improvements.
