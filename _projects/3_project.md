@@ -21,7 +21,7 @@ category: work
     - [Examples](#Examples)
 - [Discussion](#Discussion)
 
-</br></br>
+<br><br>
 
 ## Summary
 
@@ -34,13 +34,15 @@ Similarly, using the [verl](https://github.com/volcengine/verl) repository, we t
 We achieved performance improvements of up to <strong><u>18.67%</u></strong> points over the original model, despite constraints on language consistency.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/reasoning.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Overall pipeline for training the Korean Reasoning Model
 </div>
+
+<br><br>
 
 ## Training Pipeline
 
@@ -52,6 +54,7 @@ We achieved performance improvements of up to <strong><u>18.67%</u></strong> poi
 
 - Reinforcement Learning
 
+<br><br>
 
 ### Building Datasets
 
@@ -59,6 +62,7 @@ Following previous research, we generated prompt-response pairs for math and gen
 
 We generated responses to the same prompts from multiple models. In addition, we improved the quality of the data through outcome-based filtering and generative rewards, collecting `approximately 200k data samples` for knowledge distillation process.
 
+<br><br>
 
 ### Knowledge Distillation
 
@@ -66,6 +70,7 @@ We trained the model to generate reasoning trajectories using [Qwen2.5-1.5B-Inst
 
 Using the prompt-response pairs generated in the previous stage, we performed black-box distillation, which enabled the model to learn how to generate thoughts from cold-start data.
 
+<br><br>
 
 ### Reward Modeling
 
@@ -75,6 +80,7 @@ Based on the generated responses, we assigned rewards using three open reward mo
 
 We trained the reward model using each type of dataset, and selected the final model by evaluating its performance on [RewardBench](https://arxiv.org/abs/2403.13787) and [Multilingual Reward Bench](https://arxiv.org/abs/2410.15522).
 
+<br><br>
 
 ### Reinforcement Learning
 
@@ -84,10 +90,13 @@ Unlike previous successful reproductions, we additionally applied a language con
 
 We were able to accomplish this task by applying the [GRPO](https://arxiv.org/abs/2402.03300) reinforcement learning method.
 
+<br><br>
 
 ## Results
 
 In this section, we present the performance evaluation of the trained reward model and the fine-tuned final reasoner on the reward benchmark datasets and mathematical datasets, respectively.
+
+<br><br>
 
 ### Reward Model
 
@@ -108,11 +117,13 @@ In this section, we present the performance evaluation of the trained reward mod
 | Ours (w. Reasoning)                                     | 75.14%   | 87.94%   | 91.62%   | 91.99%   | 88.94%   | 85.55%       |  84.04% |
 | <strong>Ours (w.o Reasoning) </strong>                                    | 94.13%   | 81.58%   | 91.89%   | 78.33%   | 86.47%   | 90.17%       | <strong>84.66%</strong> |
 
-</br></br>
+<br><br>
 
 The performance table shows a linear positive correlation between model size and reward benchmark performance. Additionally, while closed-source LLMs demonstrate excellent reward performance, there are significant limitations to using them for training. Nevertheless, we observed that the reward benchmark performance for the Korean language remains insufficient. In contrast, our model demonstrated balanced performance in both English and Korean.
 
 We note that rewards related to reasoning were excluded from the reward model training data to enable the application of rule-based rewards. In fact, during our experiments, we found that models with high performance in reasoning tended to show relatively lower results in general conversation and multilingual rewarding tasks.
+
+<br><br>
 
 ### Math
 
@@ -122,14 +133,15 @@ We note that rewards related to reasoning were excluded from the reward model tr
 | DeepSeek-R1-Distill-Qwen-1.5B (Think in English)         | 20.67%   | 45.75%   | 37.34%   |
 | Ours                                                     | 18.67%   | 35.00%   | 25.63%   |
 
-
-</br></br>
+<br><br>
 
 To evaluate the reasoning capabilities of our model, we utilized benchmark datasets AIME2024 and AME2023. We adopted pass@1 as the evaluation metric, and the baselines for comparison included the [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) and [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) models.
 
 Our fine-tuned model demonstrated the highest performance, showing a remarkable improvement over the base model `Qwen/Qwen2.5-1.5B-Instruct`, particularly on the AIME2024 dataset. Furthermore, it achieved performance comparable to that of the DeepSeek-R1-Distill-Qwen-1.5B model. Importantly, unlike the English-only baselines, our model supports reasoning in Korean, which retains significant value.
 
 On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited limited reasoning ability and achieved low performance. In contrast, DeepSeek model, which is primarily trained on Chinese and English, showed notable performance but was unable to generate responses in Korean. Our model, however, supported Korean input and achieved the compable performance among the models tested. However, it is also capable of generating responses in Korean. Furthermore, a performance gap remains when compared to English inputs, indicating room for further improvement.
+
+<br><br>
 
 ### Examples
     ---
@@ -168,7 +180,7 @@ On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited 
     ### 최종 답
     \boxed{4}
     ---
-</br></br>
+<br><br>
 
 ## Discussion
 
