@@ -34,8 +34,8 @@ Similarly, using the [verl](https://github.com/volcengine/verl) repository, we t
 We achieved performance improvements of up to <strong><u>18.67%</u></strong> points over the original model, despite constraints on language consistency.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="/assets/img/reasoning.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/reasoning.png" title="reasoning" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -180,7 +180,9 @@ On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited 
     ### 최종 답
     \boxed{4}
     ---
-<br><br>
+
+<br><br><br><br>
+
 
 ## Discussion
 
