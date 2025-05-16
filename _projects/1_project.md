@@ -2,7 +2,7 @@
 layout: page
 title: On Device LLM Serving Engine 
 description: Optimizing and supporting language models for execution on NPU backend.
-img: assets/img/et-logo.png
+img: assets/img/ondevice.png
 importance: 1
 category: work
 related_publications: false

@@ -7,15 +7,40 @@ importance: 2
 category: work
 ---
 
+## Contents
+
+- [Summary](#Summary)
+- [Training Pipeline](#Training-Pipeline)
+    - [Building Datasets](#Building-Datasets)
+    - [Knowledge Distillation](#Knowledge-Distillation)
+    - [Reward Modeling](#Reward-Modeling)
+    - [Reinforcement Learning](#Reinforcement-Learning)
+- [Results](#Results)
+    - [Reward Model](#Reward-Model)
+    - [Math](#Math)
+    - [Examples](#Examples)
+- [Discussion](#Discussion)
+
+</br></br>
+
 ## Summary
 
 Recently, models equipped with reasoning capabilities have demonstrated remarkable performance, such as [ChatGPT-o1](https://arxiv.org/abs/2412.16720).
 
-In the open research community, [Deepseek-AI](https://arxiv.org/abs/2501.12948) provides recipes for building o1-like models, paving the way to equip models with reasoning capabilities.
+In the open research community, [Deepseek-AI](https://arxiv.org/abs/2501.12948) provides recipes for building `o1-like models`, paving the way to equip models with reasoning capabilities.
 
-Similarly, using the [verl](https://github.com/volcengine/verl) repository, we trained a large language model that generates its own reasoning process to improve performance. In particular, unlike the open o1-like models that support only English responses, we aligned our model to generate both reasoning traces and final summaries (i.e., primarily tokens without mathematical notation or code) in Korean.
+Similarly, using the [verl](https://github.com/volcengine/verl) repository, we trained a large language model that generates its own reasoning process to improve performance. In particular, unlike the open o1-like models that support only English responses, we aligned our model to generate both reasoning traces and final summaries (i.e., primarily tokens without mathematical notation or code) in `Korean`.
 
-We achieved performance improvements of up to 18.67% points over the original model, despite constraints on language consistency.
+We achieved performance improvements of up to <strong><u>18.67%</u></strong> points over the original model, despite constraints on language consistency.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Overall pipeline for training the Korean Reasoning Model
+</div>
 
 ## Training Pipeline
 
@@ -32,7 +57,7 @@ We achieved performance improvements of up to 18.67% points over the original mo
 
 Following previous research, we generated prompt-response pairs for math and general conversation from a high-capability reasoning model for the knowledge distillation stage.
 
-We generated responses to the same prompts from multiple models. In addition, we improved the quality of the data through outcome-based filtering and generative rewards, collecting approximately 200k data samples for knowledge distillation process.
+We generated responses to the same prompts from multiple models. In addition, we improved the quality of the data through outcome-based filtering and generative rewards, collecting `approximately 200k data samples` for knowledge distillation process.
 
 
 ### Knowledge Distillation
@@ -46,14 +71,14 @@ Using the prompt-response pairs generated in the previous stage, we performed bl
 
 To assign rewards for general conversation, we built a reward model that supports Korean. This process mainly followed the pipeline of [Skyword-Reward](https://arxiv.org/abs/2410.18451), and we used publicly available models that support Korean to generate Korean response (chosen, rejected) pairs (e.g., [Mistral](https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501), [Qwen](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)). 
 
-Based on the generated responses, we assigned rewards using three open reward models. After performing re-centering based on the performance of each model, we constructed three types of preference datasets (chosen, rejected pairs).
+Based on the generated responses, we assigned rewards using three open reward models. After performing re-centering based on the performance of each model, we constructed three types of `preference datasets` (chosen, rejected pairs).
 
 We trained the reward model using each type of dataset, and selected the final model by evaluating its performance on [RewardBench](https://arxiv.org/abs/2403.13787) and [Multilingual Reward Bench](https://arxiv.org/abs/2410.15522).
 
 
 ### Reinforcement Learning
 
-At this stage, our goal was to endow the chat model obtained from the knowledge distillation phase with reasoning capability. Specifically, we trained the model on math data using outcome-based rewards, which have been shown in previous studies to contribute significantly to performance improvement. Similar to Deepseekai-R1, we applied the reward model to summaries only.
+At this stage, our goal was to endow the chat model obtained from the knowledge distillation phase with reasoning capability. Specifically, we trained the model on math data using outcome-based rewards, which have been shown in previous studies to contribute significantly to performance improvement. Similar to `Deepseekai-R1`, we applied the reward model to summaries only.
 
 Unlike previous successful reproductions, we additionally applied a language consistency reward, focusing on aligning the language used between the input prompt and the generated thought. One of the key insights from this process was that removing code snippets, mathematical equations, and markdown elements was crucial for preventing reward hacking.
 
@@ -61,6 +86,8 @@ We were able to accomplish this task by applying the [GRPO](https://arxiv.org/ab
 
 
 ## Results
+
+In this section, we present the performance evaluation of the trained reward model and the fine-tuned final reasoner on the reward benchmark datasets and mathematical datasets, respectively.
 
 ### Reward Model
 
@@ -81,6 +108,8 @@ We were able to accomplish this task by applying the [GRPO](https://arxiv.org/ab
 | Ours (w. Reasoning)                                     | 75.14%   | 87.94%   | 91.62%   | 91.99%   | 88.94%   | 85.55%       |  84.04% |
 | <strong>Ours (w.o Reasoning) </strong>                                    | 94.13%   | 81.58%   | 91.89%   | 78.33%   | 86.47%   | 90.17%       | <strong>84.66%</strong> |
 
+</br></br>
+
 The performance table shows a linear positive correlation between model size and reward benchmark performance. Additionally, while closed-source LLMs demonstrate excellent reward performance, there are significant limitations to using them for training. Nevertheless, we observed that the reward benchmark performance for the Korean language remains insufficient. In contrast, our model demonstrated balanced performance in both English and Korean.
 
 We note that rewards related to reasoning were excluded from the reward model training data to enable the application of rule-based rewards. In fact, during our experiments, we found that models with high performance in reasoning tended to show relatively lower results in general conversation and multilingual rewarding tasks.
@@ -93,9 +122,12 @@ We note that rewards related to reasoning were excluded from the reward model tr
 | DeepSeek-R1-Distill-Qwen-1.5B (Think in English)         | 20.67%   | 45.75%   | 37.34%   |
 | Ours                                                     | 18.67%   | 35.00%   | 25.63%   |
 
+
+</br></br>
+
 To evaluate the reasoning capabilities of our model, we utilized benchmark datasets AIME2024 and AME2023. We adopted pass@1 as the evaluation metric, and the baselines for comparison included the [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) and [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) models.
 
-Our fine-tuned model demonstrated the highest performance, showing a remarkable improvement over the base model Qwen/Qwen2.5-1.5B-Instruct, particularly on the AIME2024 dataset. Furthermore, it achieved performance comparable to that of the DeepSeek-R1-Distill-Qwen-1.5B model. Importantly, unlike the English-only baselines, our model supports reasoning in Korean, which retains significant value.
+Our fine-tuned model demonstrated the highest performance, showing a remarkable improvement over the base model `Qwen/Qwen2.5-1.5B-Instruct`, particularly on the AIME2024 dataset. Furthermore, it achieved performance comparable to that of the DeepSeek-R1-Distill-Qwen-1.5B model. Importantly, unlike the English-only baselines, our model supports reasoning in Korean, which retains significant value.
 
 On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited limited reasoning ability and achieved low performance. In contrast, DeepSeek model, which is primarily trained on Chinese and English, showed notable performance but was unable to generate responses in Korean. Our model, however, supported Korean input and achieved the compable performance among the models tested. However, it is also capable of generating responses in Korean. Furthermore, a performance gap remains when compared to English inputs, indicating room for further improvement.
 
@@ -136,20 +168,25 @@ On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibited 
     ### 최종 답
     \boxed{4}
     ---
+</br></br>
 
 ## Discussion
 
-During the course of the project, we derived the following N insights. Furthermore, techniques aimed at enhancing reasoning capabilities, which emerged during the project, have been internalized as proprietary assets within the organization.
+During the course of the project, we derived the following N insights. Furthermore, techniques aimed at enhancing reasoning capabilities, which emerged during the project, have been internalized as proprietary assets within the corporate.
 
 - Utilizing overly difficult samples during the knowledge distillation phase can lead to performance degradation. This phenomenon is closely related to the capability of the backbone model.
-    - For instance, the model trained on data distilled from Qwen2.5-1.5B-Math-Instruct demonstrates superior performance on mathematical benchmarks.
-- Applying rule-based rewards through formatting functions initially leads to a reduction in the number of generated tokens, as the model prioritizes preserving the target format during early training stages. This trend gradually reverses over time and is particularly pronounced compared to the knowledge distillation phase.
-- When enforcing rules to maintain language consistency, applying rewards based on the proportion of tokens generated during the "thinking process" tends to suppress the generation of mathematical equations or code blocks.
-    - Even subtle differences in reward can lead to reward hacking, causing the model to converge on trivial solutions.
+    - For instance, the model trained on data distilled from `Qwen2.5-1.5B-Math-Instruct` demonstrates superior performance on mathematical benchmarks.
+
+- Applying rule-based rewards through formatting reward functions initially leads to a `reduction in the number of generated tokens`, as the model prioritizes preserving the target format during `early training stages`. This trend gradually mitigates over time and is particularly pronounced compared to the model only undergoing knowledge distillation.
+
+- When enforcing rules to maintain language consistency, applying rewards based on the proportion of tokens generated during the `"thinking process"` tends to suppress the generation of mathematical equations or code blocks.
+    - Even subtle differences in reward can lead to `reward hacking`, causing the model to converge on trivial solutions.
     - This issue can arise even in the absence of ratio-based rewards if there is no rule to explicitly disregard equations or code blocks.
+
 - During reward model training, the presence or absence of reasoning data significantly impacts performance on general conversation tasks.
     - This phenomenon may indicate a limitation tied to the size of the reward model, warranting further investigation.
     - In this project, rule-based rewards were applied to reasoning data (mathematics), and the reward model was trained excluding these samples.
-- A greater number of rollouts per query and larger batch sizes are effective for improving model performance and accelerating training.
+
+- `A greater number of rollouts per query` and larger batch sizes are effective for `improving model` performance and accelerating training.
     - Samples that are either too easy (i.e., correct answers across all rollouts for a given query) or too difficult (i.e., incorrect answers across all rollouts) do not contribute meaningfully to learning.
     - Samples that are appropriately challenging—where the model can occasionally produce the correct answer within certain episodes—contribute significantly to performance improvements.

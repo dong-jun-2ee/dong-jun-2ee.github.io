@@ -3,11 +3,11 @@ layout: page
 title: Small Langauge Model
 description: Training small language models for on-device deployment.
 img: assets/img/slm.png
-redirect: https://www.namuhx.com
 importance: 2
 category: work
 related_publications: false
 ---
+[NAMUHX](https://www.namuhx.com)
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
