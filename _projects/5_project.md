@@ -69,9 +69,6 @@ In addition, we remove semantically uninformative numerical sequences (e.g., 국
 
 From the total corpus of 50 billion tokens, we select and utilize 10 billion tokens for model training.
 
----
-
-필요하다면 Deduplication 방법을 더 기술적으로 설명하거나, 예시를 논문 스타일 표나 각주로 보완해 드릴 수 있습니다.
 
 
 <br><br>
@@ -84,31 +81,20 @@ We begin by constructing a base tokenizer with a vocabulary size of 40,000. New 
 
 Through this process, approximately 10,000 new tokens are added (based on LLaMA-3), with careful attention to avoid the over-inclusion of named entities. To this end, we apply **rule-based filtering** and perform **manual curation** to refine the final vocabulary.
 
----
-
-필요하다면 수치 설명이나 인용을 추가해 더 명확한 논문 스타일로 확장할 수 있습니다.
-
-
 <br><br>
 
 ### Training a Model
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/eeve.png" title="eeve" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    Training Stage of Efficient and Effective Vocabulary Expansion (EEVE)
-</div>
-
-<div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/llama-pro.png" title="llama-pro" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Block expansion method proposed in LLaMA Pro
+    Left: Training Stage of Efficient and Effective Vocabulary Expansion (EEVE) / Right: Block expansion method proposed in LLaMA Pro
 </div>
 
 <br><br>
