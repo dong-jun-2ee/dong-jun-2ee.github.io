@@ -34,7 +34,7 @@ In our work, we focus on building a domain-specific language model through the l
 Furthermore, by employing a training technique leveraging *logit space manipulation*, we attain ***up to a 5% performance gain*** on domain-specific benchmarks.
 
 
-<br><br>
+<br>
 
 ## Approaches
 
@@ -91,6 +91,7 @@ Detailed information related to the extracted tasks is provided in the table bel
 | Text Completion| Text Completion | 80,273   |
 | Total          | -               | 383,580  |
 
+<br><br>
 
 Example:
 
@@ -192,14 +193,14 @@ However, our approach still exhibits limitations, including `relatively modest p
 
 During the course of this project, we developed simple yet effective domain adaptation approaches from both the perspective of data composition and training algorithms. Our primary focus was on training domain-specific large language models (LLMs), aiming to efficiently acquire domain knowledge from constrained environments while minimizing catastrophic forgetting.
 
-This project was conducted with a specific focus on the legal domain. Due to the reliance on internal and benchmark datasets, the work faces limitations regarding public accessibility. Additionally, both the proposed methods and source code are not publicly available.
+This project was conducted with a specific focus on the legal domain. Due to the reliance on internal training and benchmark datasets, the work faces limitations regarding public accessibility. Additionally, both the proposed methods and source code are not publicly available.
 
 - We observed that modifying data composition can significantly enhance the efficiency of domain adaptation.
-  - In this context, our rule-based approach, though simple, proved to be effective. We found that overly strict rules can hinder the generation of meaningful learning signals, whereas overly lenient rules tend to promote duplication of documents.
-  - Similar to prior research, structuring data in the format of reading comprehension tasks contributed to improvements in prompting capabilities, which in turn enhanced instruction-following performance after supervised fine-tuning.
+  - In this context, our rule-based approach, though simple, proved to be effective. We found that overly ***strict rules can hinder the generation of meaningful learning signals***, whereas ***overly lenient rules tend to promote duplication of documents***.
+  - Similar to prior research, structuring data in the format of reading comprehension tasks contributed to ***improvements in prompting capabilities***, which in turn enhanced instruction-following performance after supervised fine-tuning.
 
 - When conducting continual pre-training on datasets composed of legal reasoning data, we observed that the model's performance on general domain tasks also improved.
 
 - The logit swap technique, despite its simplicity, contributed meaningfully to improving domain adaptation performance.
   - The effectiveness of this method scales with the capabilities of the teacher model; stronger teacher models lead to greater performance gains, and the inverse also holds.
-  - However, this approach still presents limitations, as it does not always deliver outstanding adaptation performance, particularly when considering the modest performance degradation it may introduce.
+  - However, this approach still presents `limitations`, as it does `not deliver outstanding` adaptation performance and the `modest performance degradation` it may introduce.
