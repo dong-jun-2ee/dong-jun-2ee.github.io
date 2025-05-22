@@ -22,8 +22,9 @@ category: work
 - [Results](#results)
 - [Discussion](#discussion)
 
-
 <br>
+
+---
 
 ## Summary
 
@@ -46,7 +47,9 @@ Compared to the original tokenizer, our method achieves a `30% improvement in to
     Overall pipeline for Vocabulary Expansion
 </div>
 
-<br><br>
+<br>
+
+---
 
 ## Training Pipeline
 
@@ -82,9 +85,7 @@ In addition, we remove semantically uninformative numerical sequences (e.g., 국
 
 From the total corpus of 50 billion tokens, we select and utilize 10 billion tokens for model training.
 
-
-
-<br><br>
+<br>
 
 ### Training a Tokenizer
 
@@ -94,7 +95,7 @@ We begin by constructing a base tokenizer with a vocabulary size of 40,000. New 
 
 Through this process, approximately 10,000 new tokens are added (based on LLaMA-3), with careful attention to avoid the over-inclusion of named entities. To this end, we apply **rule-based filtering** and perform **manual curation** to refine the final vocabulary.
 
-<br><br>
+<br>
 
 ### Training a Model
 
@@ -180,9 +181,9 @@ In contrast to prior studies, we introduce a curriculum learning strategy in whi
 
 This approach yielded meaningful performance improvements, particularly in Korean language tasks. We posit that this effect offers a promising direction for enhancing the performance of low-resource languages that are underrepresented in the pre-training corpus.
 
+<br>
 
-<br><br>
-
+---
 
 ## Results
 
@@ -220,8 +221,9 @@ In particular, when examining English benchmark performance, our method appears 
 
 These results underscore the effectiveness of our reproduction method, which demonstrates strong capabilities in both adaptation and mitigation of forgetting.
 
-<br><br>
+<br>
 
+---
 
 ## Discussion
 

@@ -21,7 +21,9 @@ category: work
     - [Examples](#examples)
 - [Discussion](#discussion)
 
-<br><br>
+<br>
+
+---
 
 ## Summary
 
@@ -42,7 +44,9 @@ We achieve performance improvements of up to <strong><u>18.67%</u></strong> poin
     Overall pipeline for training the Korean Reasoning Model
 </div>
 
-<br><br>
+<br>
+
+---
 
 ## Training Pipeline
 
@@ -54,7 +58,8 @@ We achieve performance improvements of up to <strong><u>18.67%</u></strong> poin
 
 - Reinforcement Learning
 
-<br><br>
+<br>
+
 
 ### Building Datasets
 
@@ -62,7 +67,8 @@ Following previous research, we generate prompt-response pairs for math and gene
 
 We generate responses to the same prompts from multiple models. In addition, we improve the quality of the data through outcome-based filtering and generative rewards, collecting `approximately 200k data samples` for knowledge distillation process.
 
-<br><br>
+<br>
+
 
 ### Knowledge Distillation
 
@@ -70,7 +76,7 @@ We train the model to generate reasoning trajectories using [Qwen2.5-1.5B-Instru
 
 Using the prompt-response pairs generated in the previous stage, we perform black-box distillation, which enable the model to learn how to generate thoughts from cold-start data.
 
-<br><br>
+<br>
 
 ### Reward Modeling
 
@@ -80,7 +86,7 @@ Based on the generated responses, we assign rewards using three open reward mode
 
 We train the reward model using each type of dataset, and select the final model by evaluating its performance on [RewardBench](https://arxiv.org/abs/2403.13787) and [Multilingual Reward Bench](https://arxiv.org/abs/2410.15522).
 
-<br><br>
+<br>
 
 ### Reinforcement Learning
 
@@ -90,13 +96,15 @@ Unlike previous successful reproductions, we additionally apply a language consi
 
 We are able to accomplish this task by applying the [GRPO](https://arxiv.org/abs/2402.03300) reinforcement learning method.
 
-<br><br>
+<br>
+
+---
 
 ## Results
 
 In this section, we present the performance evaluation of the trained reward model and the fine-tuned final reasoner on the reward benchmark datasets and mathematical datasets, respectively.
 
-<br><br>
+<br>
 
 ### Reward Model
 
@@ -117,13 +125,13 @@ In this section, we present the performance evaluation of the trained reward mod
 | Ours (w. Reasoning)                                     | 75.14%   | 87.94%   | 91.62%   | 91.99%   | 88.94%   | 85.55%       |  84.04% |
 | <strong>Ours (w.o Reasoning) </strong>                                    | 94.13%   | 81.58%   | 91.89%   | 78.33%   | 86.47%   | 90.17%       | <strong>84.66%</strong> |
 
-<br><br>
+<br>
 
 The performance table shows a linear `positive correlation between model size` and reward benchmark performance. Additionally, while closed-source LLMs demonstrate excellent reward performance, there are significant limitations to using them for training. Nevertheless, we observe that the reward benchmark performance for the Korean language remains insufficient. In contrast, our model demonstrates balanced performance in both English and Korean.
 
 We note that rewards related to reasoning are excluded from the reward model training data to enable the application of rule-based rewards. In fact, during our experiments, we find that models with `high performance in reasoning tended to show relatively lower results` in general conversation and multilingual rewarding tasks.
 
-<br><br>
+<br>
 
 ### Math
 
@@ -141,7 +149,7 @@ Our fine-tuned model demonstrates the highest performance, showing a remarkable 
 
 On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibits limited reasoning ability and achieves low performance. In contrast, DeepSeek model, which is primarily trained on Chinese and English, shows notable performance but is unable to generate responses in Korean. Our model, however, supports Korean input and achieves the compable performance among the models tested. However, it is also capable of generating responses in Korean. Furthermore, a performance gap remains when compared to English inputs, indicating room for further improvement.
 
-<br><br>
+<br>
 
 ### Examples
     ---
@@ -181,8 +189,9 @@ On the Korean-translated AMC2022 and AMC2023 datasets, the Qwen model exhibits l
     \boxed{4}
     ---
 
-<br><br><br><br>
+<br><br>
 
+---
 
 ## Discussion
 

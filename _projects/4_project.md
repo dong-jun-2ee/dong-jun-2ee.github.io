@@ -18,8 +18,9 @@ category: work
     - [Training Perspective](#training-perspective)
 - [Discussion](#discussion)
 
-
 <br>
+
+---
 
 ## Summary
 
@@ -35,6 +36,8 @@ Furthermore, by employing a training technique leveraging *logit space manipulat
 
 
 <br>
+
+---
 
 ## Approaches
 
@@ -137,6 +140,8 @@ Through this strategy, the student model benefits from a distillation-like proce
 
 <br>
 
+---
+
 ## Results 
 
 ### Data perspective
@@ -188,6 +193,8 @@ While our model underperforms the baseline in the general domain, it achieves su
 However, our approach still exhibits limitations, including `relatively modest performance improvements` and `minimal, yet non-negligible, degradation` in general-domain performance.
 
 <br>
+
+---
 
 ## Discussion
 

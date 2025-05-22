@@ -20,6 +20,8 @@ category: work
 
 <br>
 
+---
+
 ## Summary
 
 Recent efforts have focused on training foundation models more **efficiently and effectively**. To this end, both classical approaches such as *knowledge distillation* and more sophisticated techniques have been explored. For example, [Gemma 3](https://arxiv.org/abs/2503.19786) was distilled from [Gemini](https://gemini.google.com/) usning thier improved approach ([GKD](https://arxiv.org/abs/2306.13649)), and the [LLaMA series](https://arxiv.org/abs/2407.21783) also maximized training efficiency through distillation from larger models. Particularly, as the importance of *reasoning models* has grown, this approach has been adopted in models like [Qwen3](https://arxiv.org/abs/2505.09388) and [DeepSeek](https://arxiv.org/abs/2501.12948), demonstrating its effectiveness.
@@ -42,6 +44,10 @@ Our approach achieves **over 3% improvement** compared to existing state-of-the-
 <div class="caption">
     Overall pipeline for `Class knowledge distillation`
 </div>
+
+<br>
+
+---
 
 
 ## Methodology
@@ -160,8 +166,9 @@ Notably, the **baseline methods considered are orthogonal to our training framew
 
 <br>
 
-## Discussion
+---
 
+## Discussion
 
 This work is part of an ***ongoing project*** and is ***subject to continuous updates and revisions***. Furthermore, we note that the approach is intended for internal use within a corporate aimed at building compact yet powerful models, and is not intended for external release.
 

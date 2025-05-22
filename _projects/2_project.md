@@ -7,76 +7,46 @@ importance: 2
 category: work
 related_publications: false
 ---
-[NAMUHX](https://www.namuhx.com)
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Contents
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- [Summary](#summary)
+- [Role of Project](#role-of-project)
+- [Discussion](#discussion)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<br><br>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Summary
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+With the recent growth in the scale of language models, there has been a significant improvement in their performance. However, deploying large-scale models (exceeding 3 billion parameters) on `edge devices` remains a substantial challenge due to limitations in computational resources, memory, and power consumption.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Consequently, there is a growing demand for `small language models` that are capable of ***domain-specific*** and ***agentic behaviors***. Despite the availability of numerous high-performing small models, their generation processes remain verbose, leading to increased battery usage and slower response times on edge devices.
 
-{% raw %}
+In this project, we conducted research on fine-tuning language models to operate effectively under constrained environments, ***specifically targeting specialized tasks*** on edge devices. We further translated these research outcomes into the development of a product.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+---
 
-{% endraw %}
+## Role of the Project
+
+The scope of this project was confined to wellness-related functionalities and the core operations of air purifiers. The system was designed to recognize and respond to a variety of ***bilingual commands*** by executing appropriate actions and generating relevant responses.
+
+Rather than focusing on general-purpose conversational capabilities, the project emphasized `task-oriented performance`. To this end, we explored strategies to constrain model output based on input context, thereby constructing a specialized language model optimized for specific functions. Additionally, we investigated techniques to enhance inference performance on edge devices.
+
+A comprehensive training pipeline was developed, accounting for test case coverage and real-world usability. This pipeline enabled `continuous generation of training data`, `iterative model training,` and `evaluation`. 
+
+My specific responsibilities in the project included `training small language models` and `curating, modifying, and generating domain-specific datasets`. As a result of these efforts, we achieved a performance improvement of over 20 percentage points compared to the baseline, culminating in a functional success rate exceeding 95%.
+
+---
+
+## Discussion
+
+Although this project was primarily aligned with the development of an agentic system for [NAMUHX](https://www.namuhx.com), its scope is not limited to that particular implementation. Notably, the core technologies developed have been adopted in commercial products by client, and therefore, certain technical details remain confidential.
+
+- I was directly responsible for `the creation of domain-specific datasets` and the `training and validating the small language model` tailored to product requirements.
+  - In particular, we identified data balancing and typification as critical factors. Establishing a continuously evolving and ***iteratively refined data pipeline*** proved to be essential for model improvement.
+
+- According to internal evaluation metrics, our optimized system demonstrated a `performance gain of over 20 percentage points` from the initial baseline.
+
+- We successfully implemented an agentic LLM capable of handling diverse scenarios on edge devices, and demonstrated the practicality of small language models (sLLMs) under constrained computational environments.
