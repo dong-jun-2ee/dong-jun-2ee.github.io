@@ -49,29 +49,44 @@ preview={amplibias.png}
   preview={C_3.png}
 }
 
-@inproceedings{lee2025sequential,
-  title={Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation},
-  author={Lee, Dongjun and Ko, Donggeun and Kim, Jaekwang},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  abstract = {Sequential recommendation aims to predict users' next actions by analyzing their historical behavior. Lately, contrastive learning has become prominent in this domain, especially when user interactions with items are sparse. Although data augmentation methods have flourished in fields like computer vision, their potential in sequential recommendation remains under-explored. Thus, we present Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation (HCLRec), a novel framework that harnesses multiple augmentation techniques to create diverse views on user sequences. This framework systematically employs existing augmentation techniques, creating a hierarchy to generate varied views. First, we augment the input sequences to various views using multiple augmentations. Through the continuous composition of these augmentation methods, we formulate both low-level and high-level view pairs. Second, an effective sequence-based encoder is used to embed input sequences, complemented by the supplementary blocks to capture users' nonlinear behaviors, which are further varied by augmentations. Input sequences are routed to subsequent layers based on the number of augmentations applied, helping the model discern intricate sequential patterns intensified by these augmentations. Finally, contrastive losses is calculated between view pairs of the same level within each layer. This allows the encoder to learn from the contrastive losses between augmented views of the same level, and the gap caused by different information between the low-level views and high-level views by multiple augmentations is reduced. In evaluations, HCLRec outperforms state-of-the-art methods by up to 7.22% and demonstrates its effectiveness in handling sparse data. },
-  booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium On Applied Computing},
-  year={2025},
-  series = {SAC '25},
-  selected={true},
-  preview={HCLREC.png}
+@inproceedings{10.1145/3672608.3707902,
+author = {Lee, Dongjun and Ko, Donggeun and Kim, Jaekwang},
+title = {Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation},
+year = {2025},
+isbn = {9798400706295},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3672608.3707902},
+doi = {10.1145/3672608.3707902},
+abstract = {Sequential recommendation aims to predict users' next actions by analyzing their historical behavior. Lately, contrastive learning has become prominent in this domain, especially when user interactions with items are sparse. Although data augmentation methods have flourished in fields like computer vision, their potential in sequential recommendation remains under-explored. Thus, we present Hierarchical Contrastive Learning with Multiple Augmentations for Sequential Recommendation (HCLRec), a novel framework that harnesses multiple augmentation techniques to create diverse views on user sequences. This framework systematically employs existing augmentation techniques, creating a hierarchy to generate varied views. First, we augment the input sequences to various views using multiple augmentations. Through the continuous composition of these augmentation methods, we formulate both low-level and high-level view pairs. Second, an effective sequence-based encoder is used to embed input sequences, complemented by the supplementary blocks to capture users' nonlinear behaviors, which are further varied by augmentations. Input sequences are routed to subsequent layers based on the number of augmentations applied, helping the model discern intricate sequential patterns intensified by these augmentations. Finally, contrastive losses is calculated between view pairs of the same level within each layer. This allows the encoder to learn from the contrastive losses between augmented views of the same level, and the gap caused by different information between the low-level views and high-level views by multiple augmentations is reduced. In evaluations, HCLRec outperforms state-of-the-art methods by up to 7.22\% and demonstrates its effectiveness in handling sparse data.},
+booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing},
+pages = {1231–1239},
+numpages = {9},
+keywords = {sequential recommendation, contrastive learning, multiple augmentations},
+location = {Catania International Airport, Catania, Italy},
+series = {SAC '25},
+selected={true},
+preview={HCLREC.png}
 }
 
-@inproceedings{ko2025debiasing,
-  title={Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models},
-  author={Ko, Donggeun and Lee, Dongjun and and Park, Namjun and Shim, Wonkyeong and Kim, Jaekwang},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  abstract = {Neural networks struggle with image classification when biases are learned and misleads correlations, affecting their generalization and performance. Previous methods require attribute labels (e.g. background, color) or utilizes Generative Adversarial Networks (GANs) to mitigate biases. We introduce DiffuBias, a novel pipeline for text-to-image generation that enhances classifier robustness by generating bias-conflict samples, without requiring training during the generation phase. Utilizing pretrained diffusion and image captioning models, DiffuBias generates images that challenge the biases of classifiers, using the top-$K$ losses from a biased classifier ($f_B$) to create more representative data samples. This method not only debiases effectively but also boosts classifier generalization capabilities. To the best of our knowledge, DiffuBias is the first approach leveraging a stable diffusion model to generate bias-conflict samples in debiasing tasks. Our comprehensive experimental evaluations demonstrate that DiffuBias achieves state-of-the-art performance on benchmark datasets. We also conduct a comparative analysis of various generative models in terms of carbon emissions and energy consumption to highlight the significance of computational efficiency.},
-  booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium On Applied Computing},
-  year={2025},
-  series = {SAC '25},
-  preview={diffubias.png}
+
+@inproceedings{10.1145/3672608.3707722,
+author = {Ko, Donggeun and Lee, Dongjun and Park, Namjun and Shim, Wonkyeong and Kim, Jaekwang},
+title = {Debiasing Classifiers by Amplifying Bias with Latent Diffusion and Large Language Models},
+year = {2025},
+isbn = {9798400706295},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3672608.3707722},
+doi = {10.1145/3672608.3707722},
+abstract = {Neural networks struggle with image classification when biases are learned and misleads correlations, affecting their generalization and performance. Previous methods require attribute labels (e.g. background, color) or utilizes Generative Adversarial Networks (GANs) to mitigate biases. We introduce DiffuBias, a novel pipeline for text-to-image generation that generates bias-conflict samples, without any training. By utilizing pretrained diffusion and image captioning models, DiffuBias generates, bias-conflict samples using the top-K losses from a biased classifier (fB) to debias the classifier. This method not only debiases effectively but also boosts classifier generalization capabilities. Our comprehensive experimental evaluations demonstrate that DiffuBias achieves state-of-the-art performance on benchmark datasets.},
+booktitle = {Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing},
+pages = {1290–1292},
+numpages = {3},
+keywords = {debiasing, generative model, classification},
+location = {Catania International Airport, Catania, Italy},
+series = {SAC '25},
+preview={diffubias.png}
 }
 
 @inproceedings{ko2024diffinject,
@@ -90,6 +105,7 @@ preview={amplibias.png}
   abstract = {Dataset bias is a significant challenge in machine learning, where specific attributes, such as texture or color of the images are unintentionally learned resulting in detrimental performance. To address this, previous efforts have focused on debiasing models either by developing novel debiasing algorithms or by generating synthetic data to mitigate the prevalent dataset biases. However, generative approaches to date have largely relied on using bias-specific samples from the dataset, which are typically too scarce. In this work, we propose, DiffInject, a straightforward yet powerful method to augment synthetic bias-conflict samples using a pretrained diffusion model. This approach significantly advances the use of diffusion models for debiasing purposes by manipulating the latent space. Our framework does not require any explicit knowledge of the bias types or labelling, making it a fully unsupervised setting for debiasing. Our methodology demonstrates substantial result in effectively reducing dataset bias.},
   booktitle = {AAAI 2024 Spring Symposium on Clinical Foundation Models},
   year={2024},
+  url = {https://openreview.net/pdf?id=EycZiXnkS0},
   preview={AAAI[SSS].png}
 }
 
