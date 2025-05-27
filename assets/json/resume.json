@@ -5,14 +5,7 @@
     "image": "/assets/img/prof_pic.jpg",
     "email": "akm5825@naver.com",
     "url": "https://dong-jun-2ee.github.io",
-    "summary": "An AI researcher born in Korea, specializing in recommendation systems and large language models.",
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "summary": "An AI researcher born in Korea, specializing in recommendation systems and large language models."
   },
   "work": [
     {
@@ -40,7 +33,7 @@
       "institution": "Daegu Catholic University, Deagu, Korea",
       "location": "Deagu, Korea",
       "url": "https://www.skku.edu/",
-      "area": "Department of Compute Science",
+      "area": "Department of Computer Science",
       "studyType": "Bachelor of Science",
       "startDate": "2016-02",
       "endDate": "2022-02",
@@ -60,15 +53,6 @@
     }
   ],
   "skills": [
-    {
-      "name": "Artificial Intelligence",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Recommendation Systems",
-        "Computer Vision",
-        "Nature Language Processing"
-      ]
-    },
     {
       "name": "Programming",
       "icon": "fa-solid fa-hashtag",
@@ -91,7 +75,7 @@
   ],
   "interests": [
     {
-      "name": "Artificial Intelligence",
+      "name": "Domains",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Recommendation Systems",
